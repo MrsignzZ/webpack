@@ -1,9 +1,8 @@
-import _ from 'lodash';
 
-function createDomElement() {
-  var dom = document.createElement('div');
-  dom.innerHTML = _.join(['aicoder', '.com', ' wow'], '');
-  return dom;
+import './style/index.css'// loader => css-loader module style-loader
+
+const operateDom = (dom, name) => {
+  document.querySelector(dom).textContent = name
 }
 
-document.body.appendChild(createDomElement());
+operateDom('#app', 'fbakbdjb')
